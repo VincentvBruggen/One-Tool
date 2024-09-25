@@ -9,7 +9,7 @@ public class WorldGeneration : MonoBehaviour
 
     GameObject[,] m_world;
 
-    [SerializeField] GameObject[] oresList;
+    [SerializeField] Ore[] oresList;
     private void Awake()
     {
         m_world = new GameObject[worldWidth, worldHeight];
@@ -50,6 +50,6 @@ public class WorldGeneration : MonoBehaviour
     {
         float spawnrate = Random.value;
 
-        return oresList[0];
+        return oresList[0].m_Ore;
     }
 }
