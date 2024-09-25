@@ -153,7 +153,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BoxCollider: {fileID: 8452589442661392902}
-  prefab: {fileID: 0}
+  m_Ore: {fileID: 5667855771237558806}
+  pickUP: {fileID: 4128187341467471003, guid: cba3fedbd25480845810ad4ef35b5cac, type: 3}
   requiredLevel: 2
   pickaxeLevel: 1
 --- !u!61 &8452589442661392902
