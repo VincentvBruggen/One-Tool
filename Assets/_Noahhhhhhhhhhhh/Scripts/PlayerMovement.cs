@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float fallMultiplier;
 
     private float horizontal;
-    private bool jump;
+    [SerializeField] private bool jump;
 
     private Rigidbody2D rb;
     [SerializeField] private bool isGrounded;
@@ -24,7 +24,6 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        //Application.targetFrameRate = 100;
     }
 
     
@@ -40,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
             jump = true;
             
         }
-        else
+        else if(Input.GetButtonUp("Jump"))
         {
             jump = false;
         }
@@ -51,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
         isGrounded = Physics2D.Raycast(groundCheck.transform.position, Vector2.down, groundRayDistance);
 
 
-        if (jump) 
+        if (jump && isGrounded) 
         {
             Debug.Log("Jump");
             rb.AddForce(new Vector2(0f, jumpForce), ForceMode2D.Impulse);
