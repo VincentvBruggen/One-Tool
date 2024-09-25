@@ -164,9 +164,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementSpeed: 2
-  jumpForce: 50
-  groundRayDistance: 0.01
-  fallMultiplier: 0.1
+  jumpForce: 1.3
+  groundRayDistance: 0.1
+  fallMultiplier: 0.6
+  jump: 0
   isGrounded: 0
   groundCheck: {fileID: 518733011797969653}
   groundLayer:
