@@ -5,8 +5,9 @@ using UnityEngine;
 public class Ore : MonoBehaviour
 {
     [SerializeField] private BoxCollider2D m_BoxCollider;
-    private float breakTime;
     [SerializeField] private GameObject prefab;
+
+    private float breakTime;
 
     private void Start()
     {
