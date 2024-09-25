@@ -5,18 +5,19 @@ using UnityEngine;
 public class Ore : MonoBehaviour
 {
     [SerializeField] private BoxCollider2D m_BoxCollider;
-    [SerializeField] private GameObject prefab;
+    [SerializeField] public GameObject prefab;
 
     private float breakTime;
+    private float spawnRate;
+
+    [SerializeField] private int requiredLevel;
+    [SerializeField] private int pickaxeLevel;
+
+    private Animator anim;
 
     private void Start()
     {
-        
-    }
-
-    private void Update()
-    {
-
+       anim = GetComponentInChildren<Animator>(); 
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -29,7 +30,14 @@ public class Ore : MonoBehaviour
 
     private void OnBreak()
     {
-        Destroy(gameObject);
-        Instantiate(prefab,transform.position , Quaternion.identity);
+        if (pickaxeLevel >= requiredLevel)
+        {
+            Destroy(gameObject);
+            Instantiate(prefab, transform.position, Quaternion.identity);
+        }
+        else
+        {
+            anim.SetTrigger("NotAllowed");
+        }
     }
 }
