@@ -595,6 +595,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3883531172071011919, guid: 9452755aab14ca4478fc7b936562fd48, type: 3}
+      propertyPath: m_Ore
+      value: 
+      objectReference: {fileID: 5667855771237558806, guid: 9452755aab14ca4478fc7b936562fd48, type: 3}
+    - target: {fileID: 3883531172071011919, guid: 9452755aab14ca4478fc7b936562fd48, type: 3}
+      propertyPath: pickUP
+      value: 
+      objectReference: {fileID: 4128187341467471003, guid: cba3fedbd25480845810ad4ef35b5cac, type: 3}
     - target: {fileID: 5667855771237558806, guid: 9452755aab14ca4478fc7b936562fd48, type: 3}
       propertyPath: m_Name
       value: Ore
