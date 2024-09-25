@@ -5,7 +5,8 @@ using UnityEngine;
 public class Ore : MonoBehaviour
 {
     [SerializeField] private BoxCollider2D m_BoxCollider;
-    [SerializeField] public GameObject prefab;
+    [SerializeField] public GameObject m_Ore;
+    [SerializeField] public GameObject pickUP;
 
     private float breakTime;
     private float spawnRate;
@@ -33,7 +34,7 @@ public class Ore : MonoBehaviour
         if (pickaxeLevel >= requiredLevel)
         {
             Destroy(gameObject);
-            Instantiate(prefab, transform.position, Quaternion.identity);
+            Instantiate(pickUP, transform.position, Quaternion.identity);
         }
         else
         {
