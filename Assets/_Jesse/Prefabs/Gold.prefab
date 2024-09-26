@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4699375113891390120}
   - component: {fileID: 8755003561242216443}
   - component: {fileID: 8433234175144996810}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Gold visueel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 2271361833177439065}
   - component: {fileID: 6117661265619846954}
   - component: {fileID: 6469999230115004331}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Gold
   m_TagString: Untagged
   m_Icon: {fileID: 0}

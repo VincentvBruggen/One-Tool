@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4699375113891390120}
   - component: {fileID: 8755003561242216443}
   - component: {fileID: 4730300597378143016}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Emeralt visueel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 2271361833177439065}
   - component: {fileID: 7130313889706117666}
   - component: {fileID: 6364480603617444498}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: emeralt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
