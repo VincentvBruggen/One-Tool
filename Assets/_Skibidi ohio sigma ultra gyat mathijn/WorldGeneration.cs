@@ -48,7 +48,9 @@ public class WorldGenerationcopy : MonoBehaviour
     private GameObject CheckForOre(int x, int y)
     {
         float randomValue = Random.Range(0f, 1f);
-
+        if (y == 0) { return oresList[4]; }
+        if (y == worldHeight - 1) { return oresList[5]; }
+        if (y < 3) { return oresList[6]; }
         if (y > mingeenorespawn - 1) {
             if (randomValue < ore1SpawnRate)
             {
