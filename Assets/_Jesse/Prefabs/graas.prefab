@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5037407989293257637}
   - component: {fileID: 3503444569044213413}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: graas visueel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 5097679976907021145}
   - component: {fileID: 3811116577533126920}
   - component: {fileID: 8880360832487611853}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: graas
   m_TagString: Untagged
   m_Icon: {fileID: 0}

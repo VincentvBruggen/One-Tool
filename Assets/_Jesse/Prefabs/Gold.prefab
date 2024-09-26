@@ -119,7 +119,7 @@ GameObject:
   - component: {fileID: 6469999230115004331}
   m_Layer: 3
   m_Name: Gold
-  m_TagString: gold ore
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Ore: {fileID: 1797873909275299176}
   pickUP: {fileID: 2587261588749051821, guid: 608fa8686ec446e4191aea19c5b97007, type: 3}
   breakTime: 0
-  requiredLevel: 3
+  requiredLevel: 0
 --- !u!61 &6469999230115004331
 BoxCollider2D:
   m_ObjectHideFlags: 0

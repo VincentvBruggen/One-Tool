@@ -40,8 +40,9 @@ public class WorldGenerationcopy : MonoBehaviour
                 Instantiate(block, position, Quaternion.identity, transform); 
                 m_world[x, y] = block;
 
-                yield return new WaitForEndOfFrame();
+                
             }
+            yield return null;
         }
     }
 
