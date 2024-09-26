@@ -119,7 +119,7 @@ GameObject:
   - component: {fileID: 6364480603617444498}
   m_Layer: 3
   m_Name: emeralt
-  m_TagString: Untagged
+  m_TagString: emeralt ore
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -155,8 +155,8 @@ MonoBehaviour:
   m_BoxCollider: {fileID: 6364480603617444498}
   m_Ore: {fileID: 1797873909275299176}
   pickUP: {fileID: 2587261588749051821, guid: 05885e8f90bfbc94bb9368dbb8bff5ba, type: 3}
+  breakTime: 0
   requiredLevel: 5
-  pickaxeLevel: 5
 --- !u!61 &6364480603617444498
 BoxCollider2D:
   m_ObjectHideFlags: 0

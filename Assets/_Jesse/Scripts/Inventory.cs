@@ -26,4 +26,20 @@ public class Inventory : MonoBehaviour
         player.text = player_value.ToString() + "$";
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "diamond ore")
+        {
+            diamonds_value++;
+        }
+        if (collision.gameObject.tag == "gold ore")
+        {
+            gold_value++;
+        }
+        if (collision.gameObject.tag == "emeralt ore")
+        {
+            emeralt_value++;
+        }
+    }
+
 }
