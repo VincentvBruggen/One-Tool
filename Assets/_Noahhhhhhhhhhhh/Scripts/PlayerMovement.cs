@@ -47,8 +47,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        isGrounded = Physics2D.Raycast(groundCheck.transform.position, Vector2.down, groundRayDistance);
+        //isGrounded = Physics2D.Raycast(groundCheck.transform.position, Vector2.down, groundRayDistance);
 
+        RaycastHit2D hit = Physics2D.Raycast(groundCheck.transform.position, Vector2.down, groundRayDistance, groundLayer);
+        if (hit) { isGrounded = true; }
+        else { isGrounded = false; }
 
         if (jump && isGrounded) 
         {

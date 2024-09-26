@@ -133,8 +133,8 @@ MonoBehaviour:
   m_BoxCollider: {fileID: 3552022644459512711}
   m_Ore: {fileID: 5363440491990401944}
   pickUP: {fileID: 0}
-  requiredLevel: 1
-  pickaxeLevel: 1
+  breakTime: 0
+  requiredLevel: 0
 --- !u!61 &3552022644459512711
 BoxCollider2D:
   m_ObjectHideFlags: 0

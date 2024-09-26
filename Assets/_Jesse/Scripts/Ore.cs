@@ -23,7 +23,10 @@ public class Ore : MonoBehaviour
         if (pickaxeLevel >= requiredLevel)
         {
             Destroy(gameObject);
-            Instantiate(pickUP, transform.position, Quaternion.identity);
+            if (pickUP != null)
+            {
+                Instantiate(pickUP, transform.position, Quaternion.identity);
+            }
         }
         else
         {
