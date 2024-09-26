@@ -8,11 +8,9 @@ public class Ore : MonoBehaviour
     [SerializeField] public GameObject m_Ore;
     [SerializeField] public GameObject pickUP;
 
-    private float breakTime;
-    private float spawnRate;
+    public float breakTime;
 
-    [SerializeField] private int requiredLevel;
-    [SerializeField] private int pickaxeLevel;
+    [SerializeField] public int requiredLevel;
 
     private Animator anim;
 
@@ -20,16 +18,7 @@ public class Ore : MonoBehaviour
     {
        anim = GetComponentInChildren<Animator>(); 
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if(collision.gameObject.tag == "Player")
-        {
-             OnBreak();
-        }
-    }
-
-    private void OnBreak()
+    public void OnBreak(int pickaxeLevel)
     {
         if (pickaxeLevel >= requiredLevel)
         {
