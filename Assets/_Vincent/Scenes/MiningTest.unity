@@ -528,6 +528,9 @@ MonoBehaviour:
   - {fileID: 1797873909275299176, guid: 081e8ccb09b2643418d3739a359c7cc9, type: 3}
   - {fileID: 1797873909275299176, guid: 3139f64b588c0ea40abd79a2ab41d3ab, type: 3}
   - {fileID: 1797873909275299176, guid: cba3fedbd25480845810ad4ef35b5cac, type: 3}
+  - {fileID: 5902521252880324888, guid: d33f489d87e4a9248904c3f2eaa8d656, type: 3}
+  - {fileID: 6870854812432886641, guid: 9685d9cded4ba5441b0d2e5a694a0ca5, type: 3}
+  - {fileID: 8711598113779079837, guid: c9d5b8a96ccffef4db5b2e31c32131c9, type: 3}
   ore1SpawnRate: 0.7
   ore2SpawnRate: 0.25
   ore3SpawnRate: 0.03
@@ -724,7 +727,7 @@ Transform:
   m_GameObject: {fileID: 8637451780504516893}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.25, z: 0}
+  m_LocalPosition: {x: 0, y: 2.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
