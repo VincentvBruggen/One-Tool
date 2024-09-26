@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4542239431623903667}
   - component: {fileID: 3153249667087083836}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bedrock-visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3223158429716548163}
   - component: {fileID: 4912291674597953367}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: bedrock
   m_TagString: Untagged
   m_Icon: {fileID: 0}

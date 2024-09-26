@@ -1,22 +1,65 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngineInternal;
 
 public class MiningController : MonoBehaviour
 {
+    [SerializeField] LayerMask m_LayerMask;
+
     [SerializeField] GameObject toolHolder;
+    [SerializeField] GameObject hoverEffectPref;
+
+    [SerializeField] int toolLevel;
+
+    Vector3 hoverPos;
+    Vector3 mousePos;
+    GameObject hoverObject;
+    GameObject blockToMine;
     // Start is called before the first frame update
     void Start()
     {
-        
+        hoverObject = Instantiate(hoverEffectPref);
+        hoverObject.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mousePos.z = transform.position.z;
+        hoverObject.transform.position = hoverPos;
+
+        mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition) - Camera.main.transform.position;
+        mousePos.z = toolHolder.transform.position.z;
 
         toolHolder.transform.up = mousePos;
+        transform.position = mousePos + Camera.main.transform.position;
+
+        if(Input.GetButtonDown("Fire1") && blockToMine != null)
+        {
+            Ore ore = blockToMine.GetComponent<Ore>();
+            if(ore == null) { return; }
+
+            ore.OnBreak(toolLevel);
+        }
+
+        CheckForHover();
+    }
+
+    void CheckForHover()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(toolHolder.transform.position, mousePos, 3, m_LayerMask);
+
+        Debug.DrawRay(toolHolder.transform.position, mousePos);
+        if (hit.collider != null)
+        {
+            hoverPos = hit.collider.transform.position;
+            blockToMine = hit.collider.gameObject;
+            hoverObject.SetActive(true);
+        }
+        else
+        {
+            hoverObject.SetActive(false);
+            blockToMine = null;
+        }
     }
 }

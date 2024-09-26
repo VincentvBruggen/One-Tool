@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2131709458458796935}
   - component: {fileID: 2159473663771663306}
   - component: {fileID: 2385339421608933615}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: dridt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5007566921537355989}
   - component: {fileID: 4504895384080761210}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: dridt visueel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
