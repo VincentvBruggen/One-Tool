@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ToolManager : MonoBehaviour
 {
-    public int toolLevel;
+    public int toolLevel = 0;
     public SpriteRenderer toolVisual;
 
     [SerializeField] Sprite[] toolsList;
@@ -17,6 +17,14 @@ public class ToolManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        toolVisual.sprite = toolsList[toolLevel];
+    }
+
+    public void UpgradeTool()
+    {
+        if(toolLevel <= 5)
+        { 
+            toolLevel += 1; 
+        }
     }
 }

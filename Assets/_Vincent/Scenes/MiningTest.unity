@@ -122,6 +122,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!212 &1091317387 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7829083319729075508, guid: 9ec40d16935e6b746a1a814185e7900b, type: 3}
+  m_PrefabInstance: {fileID: 7813975313972255328}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1849953303
 GameObject:
   m_ObjectHideFlags: 0
@@ -229,6 +234,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3592113429208870780, guid: 9ec40d16935e6b746a1a814185e7900b, type: 3}
+      propertyPath: toolVisual
+      value: 
+      objectReference: {fileID: 1091317387}
+    - target: {fileID: 3592113429208870780, guid: 9ec40d16935e6b746a1a814185e7900b, type: 3}
+      propertyPath: toolsList.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592113429208870780, guid: 9ec40d16935e6b746a1a814185e7900b, type: 3}
+      propertyPath: toolsList.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 5cae6074bc0f53c45ad321698f0d8386, type: 3}
+    - target: {fileID: 3592113429208870780, guid: 9ec40d16935e6b746a1a814185e7900b, type: 3}
+      propertyPath: toolsList.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 177df934cde6fbb4b8f66fe37332fcbf, type: 3}
+    - target: {fileID: 3592113429208870780, guid: 9ec40d16935e6b746a1a814185e7900b, type: 3}
+      propertyPath: toolsList.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 032e02d643ecc6542a68959344130625, type: 3}
+    - target: {fileID: 3592113429208870780, guid: 9ec40d16935e6b746a1a814185e7900b, type: 3}
+      propertyPath: toolsList.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: d013750b5cb9a5f46baf68f7662804d6, type: 3}
+    - target: {fileID: 3592113429208870780, guid: 9ec40d16935e6b746a1a814185e7900b, type: 3}
+      propertyPath: toolsList.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: 64e1ab461f5ff0f41a6920f7bec8d547, type: 3}
     - target: {fileID: 4968581165873187942, guid: 9ec40d16935e6b746a1a814185e7900b, type: 3}
       propertyPath: m_Name
       value: Player
