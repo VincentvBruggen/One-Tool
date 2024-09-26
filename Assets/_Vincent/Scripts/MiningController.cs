@@ -34,7 +34,7 @@ public class MiningController : MonoBehaviour
         toolHolder.transform.up = mousePos;
         transform.position = mousePos + Camera.main.transform.position;
 
-        if(Input.GetButtonDown("Fire1") && blockToMine != null)
+        if(Input.GetButton("Fire1") && blockToMine != null)
         {
             Ore ore = blockToMine.GetComponent<Ore>();
             if(ore == null) { return; }
