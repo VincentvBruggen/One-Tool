@@ -35,6 +35,12 @@ public class WorldGeneration : MonoBehaviour
             for (int x = 0; x < width; x++)
             {
                 GameObject block = CheckForOre(x, y);
+
+                if (block == null) 
+                { 
+                    Debug.Log("No Block found"); 
+                    break; 
+                }
                 Vector2 position = new Vector2(x, -y);
 
                 Instantiate(block, position, Quaternion.identity, transform);
