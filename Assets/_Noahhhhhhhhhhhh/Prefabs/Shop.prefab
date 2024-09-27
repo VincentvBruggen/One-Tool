@@ -773,7 +773,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 257824622504105816}
-  - component: {fileID: 3665100962208523102}
   m_Layer: 5
   m_Name: Shop
   m_TagString: Untagged
@@ -804,27 +803,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!95 &3665100962208523102
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6040753445852039241}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d0cc232afa6ed95448f2ab2d09f63ad3, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6687726839875562193
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,6 +857,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaccab5c085d22a4d97b0b56f8ed58a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  upgradeCost: 01000000050000000a000000140000001e000000
+  mainText: {fileID: 4778509459648047143}
+  secondText: {fileID: 127520110306697791}
 --- !u!222 &6000065654827257143
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -960,7 +941,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5452802109709691843}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6817185900390779331}
+        m_TargetAssemblyTypeName: ShopUpgrade, Assembly-CSharp
+        m_MethodName: UpgradeTool
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6334376126891946379
 MonoBehaviour:
   m_ObjectHideFlags: 0
