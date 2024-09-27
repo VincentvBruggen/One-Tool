@@ -10,7 +10,7 @@ public class Inventory : MonoBehaviour
     private int gold_value = 0;
     private int emeralt_value = 0;
 
-    private int player_value = 100;
+    public int currency = 100;
 
 
     [SerializeField] private TextMeshProUGUI diamonds;
@@ -23,7 +23,7 @@ public class Inventory : MonoBehaviour
         diamonds.text = diamonds_value.ToString();
         gold.text = diamonds_value.ToString();
         emeralt.text = diamonds_value.ToString();
-        player.text = player_value.ToString() + "$";
+        player.text = currency.ToString() + "$";
     }
 
 }
