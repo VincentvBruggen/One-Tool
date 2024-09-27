@@ -20,14 +20,24 @@ public class MiningController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        toolManager = GetComponentInParent<GameObject>();
-        hoverObject = Instantiate(hoverEffectPref);
-        hoverObject.SetActive(false);
+        //toolManager = GetComponentInParent<GameObject>();
+        //hoverObject = Instantiate(hoverEffectPref);
+        //hoverObject.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(toolManager == null)
+        {
+            toolManager = GetComponentInParent<GameObject>();
+        }
+        if(hoverObject == null)
+        {
+            hoverObject = Instantiate(hoverEffectPref);
+            hoverObject.SetActive(false) ;
+        }
+
         hoverObject.transform.position = hoverPos;
 
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition) - Camera.main.transform.position;
