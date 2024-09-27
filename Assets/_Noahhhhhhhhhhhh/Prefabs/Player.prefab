@@ -456,9 +456,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0ee4d413832fa6468343f848aac8b93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ore_prefab_diamond: {fileID: 0}
-  ore_prefab_gold: {fileID: 0}
-  ore_prefab_emeralt: {fileID: 0}
+  currency: 100
+  ore_prefab_diamond: {fileID: 2587261588749051821, guid: d82cb9f8754961e4c83ce18dabe5ed8c, type: 3}
+  ore_prefab_gold: {fileID: 2587261588749051821, guid: 608fa8686ec446e4191aea19c5b97007, type: 3}
+  ore_prefab_emeralt: {fileID: 2587261588749051821, guid: 05885e8f90bfbc94bb9368dbb8bff5ba, type: 3}
   diamonds: {fileID: 0}
   gold: {fileID: 0}
   emeralt: {fileID: 0}
@@ -645,7 +646,7 @@ MonoBehaviour:
     m_Bits: 8
   toolHolder: {fileID: 3042942709233815933}
   hoverEffectPref: {fileID: 1940666353923455596, guid: e6e0aaf169462f34a92c184512f82993, type: 3}
-  toolLevel: 1
+  toolManager: {fileID: 0}
 --- !u!1 &8727329228225667350
 GameObject:
   m_ObjectHideFlags: 0
