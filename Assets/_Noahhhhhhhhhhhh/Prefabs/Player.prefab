@@ -378,12 +378,13 @@ GameObject:
   m_Component:
   - component: {fileID: 611293076305566332}
   - component: {fileID: 6764418357198848822}
+  - component: {fileID: 1432755842032464125}
   - component: {fileID: 5887187273877812240}
   - component: {fileID: 1582995971048648400}
   - component: {fileID: 3592113429208870780}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -399,7 +400,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 2.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7049684576766549452}
   - {fileID: 5469309270812712912}
@@ -443,6 +444,25 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0.08456862}
   m_Size: {x: 0.31075191, y: 0.83086276}
   m_Direction: 0
+--- !u!114 &1432755842032464125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4968581165873187942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0ee4d413832fa6468343f848aac8b93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ore_prefab_diamond: {fileID: 0}
+  ore_prefab_gold: {fileID: 0}
+  ore_prefab_emeralt: {fileID: 0}
+  diamonds: {fileID: 0}
+  gold: {fileID: 0}
+  emeralt: {fileID: 0}
+  player: {fileID: 0}
 --- !u!50 &5887187273877812240
 Rigidbody2D:
   serializedVersion: 4
@@ -505,8 +525,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toolLevel: 0
-  toolVisual: {fileID: 0}
-  toolsList: []
+  toolVisual: {fileID: 7829083319729075508}
+  toolsList:
+  - {fileID: 21300000, guid: 5cae6074bc0f53c45ad321698f0d8386, type: 3}
+  - {fileID: 21300000, guid: 177df934cde6fbb4b8f66fe37332fcbf, type: 3}
+  - {fileID: 21300000, guid: 032e02d643ecc6542a68959344130625, type: 3}
+  - {fileID: 21300000, guid: d013750b5cb9a5f46baf68f7662804d6, type: 3}
+  - {fileID: 21300000, guid: 64e1ab461f5ff0f41a6920f7bec8d547, type: 3}
 --- !u!1 &5962263823333360114
 GameObject:
   m_ObjectHideFlags: 0

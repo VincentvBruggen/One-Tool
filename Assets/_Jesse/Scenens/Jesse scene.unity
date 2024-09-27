@@ -139,6 +139,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0ee4d413832fa6468343f848aac8b93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ore_prefab_diamond: {fileID: 0}
+  ore_prefab_gold: {fileID: 0}
+  ore_prefab_emeralt: {fileID: 0}
   diamonds: {fileID: 708283975}
   gold: {fileID: 1498718143}
   emeralt: {fileID: 1222844466}
@@ -445,6 +448,34 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3592113429208870780, guid: 9ec40d16935e6b746a1a814185e7900b, type: 3}
+      propertyPath: toolVisual
+      value: 
+      objectReference: {fileID: 927007980}
+    - target: {fileID: 3592113429208870780, guid: 9ec40d16935e6b746a1a814185e7900b, type: 3}
+      propertyPath: toolsList.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3592113429208870780, guid: 9ec40d16935e6b746a1a814185e7900b, type: 3}
+      propertyPath: toolsList.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 5cae6074bc0f53c45ad321698f0d8386, type: 3}
+    - target: {fileID: 3592113429208870780, guid: 9ec40d16935e6b746a1a814185e7900b, type: 3}
+      propertyPath: toolsList.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 177df934cde6fbb4b8f66fe37332fcbf, type: 3}
+    - target: {fileID: 3592113429208870780, guid: 9ec40d16935e6b746a1a814185e7900b, type: 3}
+      propertyPath: toolsList.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 032e02d643ecc6542a68959344130625, type: 3}
+    - target: {fileID: 3592113429208870780, guid: 9ec40d16935e6b746a1a814185e7900b, type: 3}
+      propertyPath: toolsList.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: d013750b5cb9a5f46baf68f7662804d6, type: 3}
+    - target: {fileID: 3592113429208870780, guid: 9ec40d16935e6b746a1a814185e7900b, type: 3}
+      propertyPath: toolsList.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: 64e1ab461f5ff0f41a6920f7bec8d547, type: 3}
     - target: {fileID: 4968581165873187942, guid: 9ec40d16935e6b746a1a814185e7900b, type: 3}
       propertyPath: m_Name
       value: Player
@@ -461,6 +492,11 @@ PrefabInstance:
       insertIndex: 2
       addedObject: {fileID: 153946333}
   m_SourcePrefab: {fileID: 100100000, guid: 9ec40d16935e6b746a1a814185e7900b, type: 3}
+--- !u!212 &927007980 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 7829083319729075508, guid: 9ec40d16935e6b746a1a814185e7900b, type: 3}
+  m_PrefabInstance: {fileID: 927007979}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &955595226
 PrefabInstance:
   m_ObjectHideFlags: 0
