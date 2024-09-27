@@ -15,17 +15,29 @@ public class MiningController : MonoBehaviour
     Vector3 mousePos;
     GameObject hoverObject;
     GameObject blockToMine;
+
+    float brealTimer = 0;
     // Start is called before the first frame update
     void Start()
     {
-        toolManager = GetComponentInParent<GameObject>();
-        hoverObject = Instantiate(hoverEffectPref);
-        hoverObject.SetActive(false);
+        //toolManager = GetComponentInParent<GameObject>();
+        //hoverObject = Instantiate(hoverEffectPref);
+        //hoverObject.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(toolManager == null)
+        {
+            toolManager = GetComponentInParent<GameObject>();
+        }
+        if(hoverObject == null)
+        {
+            hoverObject = Instantiate(hoverEffectPref);
+            hoverObject.SetActive(false) ;
+        }
+
         hoverObject.transform.position = hoverPos;
 
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition) - Camera.main.transform.position;
@@ -36,10 +48,17 @@ public class MiningController : MonoBehaviour
 
         if(Input.GetButton("Fire1") && blockToMine != null)
         {
+            brealTimer += Time.deltaTime;
             Ore ore = blockToMine.GetComponent<Ore>();
             if(ore == null) { return; }
 
-            ore.OnBreak(toolManager.GetComponent<ToolManager>().toolLevel);
+            float breakSpeed = toolManager.GetComponent<ToolManager>().GetMiningSpeed();
+
+            if (brealTimer > breakSpeed)
+            {
+                ore.OnBreak(toolManager.GetComponent<ToolManager>().toolLevel);
+                brealTimer = 0;
+            }
         }
 
         CheckForHover();

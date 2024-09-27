@@ -644,9 +644,9 @@ MonoBehaviour:
   m_LayerMask:
     serializedVersion: 2
     m_Bits: 8
+  toolManager: {fileID: 4968581165873187942}
   toolHolder: {fileID: 3042942709233815933}
   hoverEffectPref: {fileID: 1940666353923455596, guid: e6e0aaf169462f34a92c184512f82993, type: 3}
-  toolManager: {fileID: 0}
 --- !u!1 &8727329228225667350
 GameObject:
   m_ObjectHideFlags: 0
