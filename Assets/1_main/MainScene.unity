@@ -468,6 +468,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1432755842032464125, guid: 9ec40d16935e6b746a1a814185e7900b, type: 3}
+      propertyPath: gold
+      value: 
+      objectReference: {fileID: 958265440}
+    - target: {fileID: 1432755842032464125, guid: 9ec40d16935e6b746a1a814185e7900b, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 958265438}
+    - target: {fileID: 1432755842032464125, guid: 9ec40d16935e6b746a1a814185e7900b, type: 3}
+      propertyPath: emeralt
+      value: 
+      objectReference: {fileID: 958265439}
+    - target: {fileID: 1432755842032464125, guid: 9ec40d16935e6b746a1a814185e7900b, type: 3}
+      propertyPath: diamonds
+      value: 
+      objectReference: {fileID: 958265441}
+    - target: {fileID: 1432755842032464125, guid: 9ec40d16935e6b746a1a814185e7900b, type: 3}
+      propertyPath: ore_prefab_gold
+      value: 
+      objectReference: {fileID: 2587261588749051821, guid: 608fa8686ec446e4191aea19c5b97007, type: 3}
+    - target: {fileID: 1432755842032464125, guid: 9ec40d16935e6b746a1a814185e7900b, type: 3}
+      propertyPath: ore_prefab_diamond
+      value: 
+      objectReference: {fileID: 2587261588749051821, guid: d82cb9f8754961e4c83ce18dabe5ed8c, type: 3}
+    - target: {fileID: 1432755842032464125, guid: 9ec40d16935e6b746a1a814185e7900b, type: 3}
+      propertyPath: ore_prefab_emeralt
+      value: 
+      objectReference: {fileID: 2587261588749051821, guid: 05885e8f90bfbc94bb9368dbb8bff5ba, type: 3}
     - target: {fileID: 3592113429208870780, guid: 9ec40d16935e6b746a1a814185e7900b, type: 3}
       propertyPath: toolVisual
       value: 
@@ -762,6 +790,50 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4427587551548728468, guid: 426f06b46035e1840bbceccd6becc3f5, type: 3}
   m_PrefabInstance: {fileID: 958265436}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &958265438 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2786432958252341681, guid: 426f06b46035e1840bbceccd6becc3f5, type: 3}
+  m_PrefabInstance: {fileID: 958265436}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &958265439 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1402937013906920609, guid: 426f06b46035e1840bbceccd6becc3f5, type: 3}
+  m_PrefabInstance: {fileID: 958265436}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &958265440 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2254675243989376380, guid: 426f06b46035e1840bbceccd6becc3f5, type: 3}
+  m_PrefabInstance: {fileID: 958265436}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &958265441 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4686695862861467239, guid: 426f06b46035e1840bbceccd6becc3f5, type: 3}
+  m_PrefabInstance: {fileID: 958265436}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &985953335
 GameObject:
   m_ObjectHideFlags: 0
