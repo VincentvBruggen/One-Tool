@@ -10,7 +10,7 @@ public class MiningController : MonoBehaviour
     [SerializeField] GameObject toolHolder;
     [SerializeField] GameObject hoverEffectPref;
 
-    [SerializeField] int toolLevel;
+    [SerializeField] GameObject toolManager;
 
     Vector3 hoverPos;
     Vector3 mousePos;
@@ -39,7 +39,7 @@ public class MiningController : MonoBehaviour
             Ore ore = blockToMine.GetComponent<Ore>();
             if(ore == null) { return; }
 
-            ore.OnBreak(toolLevel);
+            ore.OnBreak(toolManager.GetComponent<ToolManager>().toolLevel);
         }
 
         CheckForHover();
