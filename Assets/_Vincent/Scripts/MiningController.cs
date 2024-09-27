@@ -7,10 +7,9 @@ public class MiningController : MonoBehaviour
 {
     [SerializeField] LayerMask m_LayerMask;
 
+    [SerializeField] GameObject toolManager;
     [SerializeField] GameObject toolHolder;
     [SerializeField] GameObject hoverEffectPref;
-
-    [SerializeField] GameObject toolManager;
 
     Vector3 hoverPos;
     Vector3 mousePos;
@@ -19,6 +18,7 @@ public class MiningController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        toolManager = GetComponentInParent<GameObject>();
         hoverObject = Instantiate(hoverEffectPref);
         hoverObject.SetActive(false);
     }
