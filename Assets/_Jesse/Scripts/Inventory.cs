@@ -12,6 +12,10 @@ public class Inventory : MonoBehaviour
 
     private int player_value = 100;
 
+    [SerializeField] private GameObject ore_prefab_diamond;
+    [SerializeField] private GameObject ore_prefab_gold;
+    [SerializeField] private GameObject ore_prefab_emeralt;
+
 
     [SerializeField] private TextMeshProUGUI diamonds;
     [SerializeField] private TextMeshProUGUI gold;
@@ -30,14 +34,17 @@ public class Inventory : MonoBehaviour
     {
         if (collision.gameObject.tag == "diamond ore")
         {
+            Destroy(ore_prefab_diamond);
             diamonds_value++;
         }
         if (collision.gameObject.tag == "gold ore")
         {
+            Destroy(ore_prefab_gold);
             gold_value++;
         }
         if (collision.gameObject.tag == "emeralt ore")
         {
+            Destroy(ore_prefab_emeralt);
             emeralt_value++;
         }
     }
