@@ -20,6 +20,24 @@ public class ToolManager : MonoBehaviour
         toolVisual.sprite = toolsList[toolLevel];
     }
 
+    public float GetMiningSpeed()
+    {
+        switch(toolLevel)
+        {
+            case 0:
+                return 1.5f;
+            case 1:
+                return 1.2f;
+            case 2:
+                return 0.7f;
+            case 3:
+                return 0.5f;
+            case 4:
+                return 0.35f;
+        }
+        return 1.5f;
+    }
+
     public void UpgradeTool()
     {
         if(toolLevel <= 5)
